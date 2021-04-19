@@ -1,0 +1,45 @@
+.modal-header {
+    background-color: #383839;
+    padding: 12px 20px;
+}
+
+.modal-title {
+    font-size: 28px;
+    font-weight: normal;
+    color: white;
+    margin-top: 0 !important;
+}
+
+.modal-header button.close {
+    font-size: 40px;
+    font-weight: normal;
+    line-height: 0.4;
+    color: white;
+    opacity: 1;
+}
+
+.modal-header button.close:hover {
+    color: white;
+}
+
+.modal-footer {
+    border-top: unset;
+}
+
+.btns-group {
+    padding-top: 8px;
+}
+
+.not-member-txt,
+.back-login-txt {
+    display: inline-block;
+    font-size: 13px;
+    cursor: pointer;
+    padding-left: 20px;
+}
+
+.forgot-pass-txt {
+    font-size: 13px;
+    cursor: pointer;
+    padding-top: 10px;
+}

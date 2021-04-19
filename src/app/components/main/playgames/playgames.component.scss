@@ -1,0 +1,173 @@
+.pageTitle {
+    font-size: 2.3em;
+    color: #fff;
+    border-bottom: 3px solid #f5593d;
+    margin-bottom: 30px;
+    padding: 10px 0;
+    text-align: left;
+}
+
+.web-games-title {
+    padding-top: 10px;
+}
+
+.webGames {
+    background: rgb(34, 34, 34);
+    background: -moz-linear-gradient(180deg, rgba(34, 34, 34, 1) 0%, rgba(18, 18, 18, 1) 100%);
+    background: -webkit-linear-gradient(180deg, rgba(34, 34, 34, 1) 0%, rgba(18, 18, 18, 1) 100%);
+    background: linear-gradient(180deg, rgba(34, 34, 34, 1) 0%, rgba(18, 18, 18, 1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#222222", endColorstr="#121212", GradientType=1);
+    padding-bottom: 10px;
+    border-bottom: 3px solid #f5593d;
+    position: relative;
+}
+
+.webGames::before {
+    // background: url("../img/games-row-bg.png") no-repeat right bottom;
+    background-size: contain;
+    content: "";
+    position: absolute;
+    right: 0;
+    bottom: 2px;
+    z-index: 0;
+    width: 940px;
+    height: 220px;
+}
+
+.plainRow {
+    float: left;
+    width: 100%;
+    clear: both;
+}
+
+.andGameRow {
+    position: relative;
+    background: rgb(34, 34, 34);
+    background: -moz-linear-gradient(180deg, rgba(34, 34, 34, 1) 0%, rgba(18, 18, 18, 1) 100%);
+    background: -webkit-linear-gradient(180deg, rgba(34, 34, 34, 1) 0%, rgba(18, 18, 18, 1) 100%);
+    background: linear-gradient(180deg, rgba(34, 34, 34, 1) 0%, rgba(18, 18, 18, 1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#222222", endColorstr="#121212", GradientType=1);
+    padding-bottom: 0;
+    border-bottom: 3px solid #f5593d;
+    margin-bottom: 10px;
+}
+
+.andGameRow::before {
+    // background: url("../img/games-row-bg.png") no-repeat right bottom;
+    background-size: contain;
+    content: "";
+    position: absolute;
+    right: 0;
+    bottom: -1px;
+    z-index: 0;
+    width: 940px;
+    height: 220px;
+}
+
+.gameBox {
+    float: left;
+    width: 22.33%;
+    margin: 0 1% 2%;
+    position: relative;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -o-border-radius: 10px;
+    -ms-border-radius: 10px;
+}
+
+.gameBoxContent {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background: rgba(184, 21, 21, 0.9);
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -o-border-radius: 10px;
+    -ms-border-radius: 10px;
+    transition: all 0.3s ease;
+    -webkit-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    text-align: center;
+    opacity: 0;
+    color: #fff;
+    padding: 10px 10px;
+}
+
+.gameBoxContent p {
+    color: #fff;
+    line-height: 1.2;
+}
+
+.gameBox:hover .gameBoxContent {
+    opacity: 1;
+}
+
+.gameBox img {
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -o-border-radius: 10px;
+    -ms-border-radius: 10px;
+
+    max-width: 100%;
+}
+
+.btnCustomWhite {
+    background: #B81515;
+    color: #fff;
+    padding: 5px 10px;
+    font-size: 1em;
+    margin: 8px 0;
+    display: inline-block;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -o-border-radius: 10px;
+    -ms-border-radius: 10px;
+    border: 2px solid #fff;
+}
+
+.btnCustomWhite:hover {
+    background: #B81515;
+    color: #000;
+    border: 2px solid #fff;
+}
+
+.gamesTitleFloat {
+    color: #fff;
+    font-size: 1em;
+}
+
+.androidGameBox {
+    float: left;
+    margin: 0 1% 3%;
+    width: 23%;
+    position: relative;
+    z-index: 2;
+}
+
+.androidGameBox img {
+    margin: 0 auto;
+    display: block;
+}
+
+.andDwnBtn:hover {
+    opacity: 0.7;
+}
+
+.androidGameBox .adImg {
+    height: 210px;
+    width: 200px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -o-border-radius: 10px;
+    -ms-border-radius: 10px;
+    margin-bottom: 10px;
+}

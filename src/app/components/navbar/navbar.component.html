@@ -1,0 +1,158 @@
+<nav class="navbar navbar-expand-lg fixed-top " color-on-scroll="700">
+    <div class="container">
+        <div class="navbar-translate">
+            <a class="navbar-brand" href="#">GamingHub</a>
+            <button class="navbar-toggler navbar-burger" type="button" data-toggle="collapse"
+                data-target="#navbarToggler" aria-controls="navbarTogglerDemo02" aria-expanded="false"
+                aria-label="Toggle navigation" (click)="sidebarToggle()">
+                <span class="navbar-toggler-bar"></span>
+                <span class="navbar-toggler-bar"></span>
+                <span class="navbar-toggler-bar"></span>
+            </button>
+        </div>
+        <div class="navbar-collapse" id="navbarToggler">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item" *ngIf="!isDocumentation()">
+                    <a class="nav-link" data-placement="bottom" [routerLink]="['main/playgames']">
+                        <i class="fa fa-gamepad"></i> Play Games
+                    </a>
+                </li>
+                <!-- <li class="nav-item" *ngIf="!isDocumentation()">
+                    <a class="nav-link" rel="tooltip" title="Follow us on Instagram" data-placement="bottom" href="https://www.instagram.com/CreativeTimOfficial" target="_blank">
+                        <i class="fa fa-instagram"></i>
+                        <p class="d-lg-none">Instagram</p>
+                    </a>
+                </li> -->
+                <li class="nav-item">
+                    <a target="_blank" class="btn btn-danger btn-round" (click)="openLoginModal(content)">Login</a>
+                </li>
+                <li class="nav-item">
+                    <a target="_blank" class="btn btn-danger btn-round" (click)="openRegModal(regContent)">Join</a>
+                </li>
+                <!-- <li class="nav-item" *ngIf="!isHome()">
+                    <a [routerLink]="['/home']" *ngIf="!isDocumentation()" class="nav-link"><i
+                            class="nc-icon nc-layout-11"></i>Components</a>
+                    <a [routerLink]="['/home']" *ngIf="isDocumentation()" class="nav-link">Back to Kit</a>
+                </li>
+                <li class="nav-item" *ngIf="isDocumentation()">
+                    <a href="https://github.com/creativetimofficial/paper-kit-2-angular/issues?ref=pk2-free-local"
+                        target="_blank" class="nav-link">Have an issue</a>
+                </li> -->
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- login modal - start -->
+<ng-template class="login-modal" #content let-modal>
+    <form>
+        <div class="modal-header">
+            <h4 class="modal-title" id="modal-basic-title">Sign In</h4>
+            <button type="button" class="close btn-close" aria-label="Close" (click)="modal.dismiss('Cross click')">
+                <span aria-hidden="true">&times;</span>
+            </button>
+        </div>
+        <div class="modal-body">
+            <div class="form-group">
+                <input type="text" autocomplete="off" class="form-control" placeholder="Email*">
+            </div>
+            <div class="form-group">
+                <input type="password" autocomplete="off" class="form-control" placeholder="Password*">
+            </div>
+            <div class="btns-group">
+                <button type="button" class="btn btn-default btn-round"
+                    (click)="modal.close('Save click')">Login</button>
+                <p class="not-member-txt" (click)="openRegModal(regContent)">Not a Member?</p>
+            </div>
+            <p class="forgot-pass-txt">Forgot Password</p>
+        </div>
+        <!-- <div class="modal-footer">
+    </div> -->
+    </form>
+</ng-template>
+<!-- login modal - end -->
+
+
+<!-- registration modal - start -->
+<ng-template class="registration-modal" #regContent let-modal>
+    <form>
+        <div class="modal-header">
+            <h4 class="modal-title" id="modal-basic-title">Register</h4>
+            <button type="button" class="close btn-close"  (click)="modal.dismiss('Cross click')">
+                <span aria-hidden="true">&times;</span>
+            </button>
+        </div>
+        <div class="modal-body">
+            <div class="form-group">
+                <input type="text" class="form-control" placeholder="Name*">
+            </div>
+            <div class="form-group">
+                <input type="text" autocomplete="off" class="form-control" placeholder="Email*">
+            </div>
+            <div class="form-group">
+                <input type="text" class="form-control" placeholder="Mobile*">
+            </div>
+            <div class="form-group">
+                <div class="input-group date" [ngClass]="{'input-group-focus':focus===true}">
+                    <input type="text" autocomplete='0' class="form-control" placeholder="yyyy-mm-dd"
+                         name="dp" [(ngModel)]="model" ngbDatepicker #d="ngbDatepicker" (click)="d.toggle()" (focus)="focus=true" (blur)="focus=false" />
+                    <div class="input-group-append">
+                        <span class="glyphicon glyphicon-calendar input-group-text">
+                          <i class="fa fa-calendar" aria-hidden="true"></i>
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="input-group" [ngClass]="{'input-group-focus':focus===true}">
+                    <select class="custom-select" id="inputGroupSelect01">
+                        <option selected value="Pakistan">Pakistan</option>
+                        <option value="USA">USA</option>
+                        <option value="UK">UK</option>
+                        <option value="KSA">KSA</option>
+                    </select>
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="input-group" [ngClass]="{'input-group-focus':focus===true}">
+                    <select class="custom-select" id="inputGroupSelect02">
+                        <option selected>Select State</option>
+                        <option value="Peshawar">Peshawar</option>
+                        <option value="Islamabad">Islamabad</option>
+                        <option value="Rawalpindi">Rawalpindi</option>
+                    </select>
+                </div>
+            </div>
+            <div class="form-group">
+                <input type="password" autocomplete="off" class="form-control" placeholder="Password*">
+            </div>
+            <div class="form-group">
+                <input type="text" class="form-control" placeholder="Enter Referal Code">
+            </div>
+            <div class="form-group">
+                <!-- <label class="form-check-label">
+                    <input class="form-check-input" type="checkbox" value=""> I Agree to The <a href="#" target="_blank" class="orange"> Terms of Service</a> and to The
+                    <a href="#" target="_blank" class="orange"> Privacy policy </a> <span class="form-check-sign"></span>
+                </label> -->
+
+
+                <label class="form-check-label"> 
+                    <input type="checkbox" [(ngModel)]="termsCond"  data-md-icheck/>
+                    I Agree to The <a href="#" target="_blank" class="orange"> Terms of Service</a> and to The
+                    <a href="#" target="_blank" class="orange"> Privacy policy </a> <span class="form-check-sign"></span>
+                    
+                      <span class="checkmark"></span>
+                    </label>
+                    
+             </div>
+            <div class="btns-group">
+                <button type="button" class="btn btn-default btn-round"
+                    (click)="modal.close('Save click')">Submit</button>
+                <p class="back-login-txt" (click)="openLoginModal(content) ">Back to Login</p>
+            </div>
+        </div>
+        <!-- <div class="modal-footer">
+        </div> -->
+    </form>
+</ng-template>
+<!-- registration modal - end -->

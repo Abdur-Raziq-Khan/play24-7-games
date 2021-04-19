@@ -1,0 +1,143 @@
+.navbar {
+    background: -webkit-gradient(linear, left bottom, left top, from(#ffeec6), color-stop(52%, white));
+    background: linear-gradient(0deg, #ffeec6 0%, white 52%);
+}
+
+.btn-danger {
+    color: white !important;
+}
+
+// login modal
+.modal-header {
+    background-color: #383839;
+    padding: 12px 20px;
+}
+
+.modal-title {
+    font-size: 28px;
+    font-weight: normal;
+    color: white;
+    margin-top: 0 !important;
+}
+
+.modal-header button.close {
+    font-size: 40px;
+    font-weight: normal;
+    line-height: 0.4;
+    color: white;
+    opacity: 1;
+}
+
+.modal-header button.close:hover {
+    color: white;
+}
+
+.modal-footer {
+    border-top: unset;
+}
+
+.btns-group {
+    padding-top: 8px;
+}
+
+ .not-member-txt,
+ .back-login-txt {
+    display: inline-block;
+    font-size: 13px;
+    cursor: pointer;
+    padding-left: 20px;
+ }
+
+.forgot-pass-txt {
+    font-size: 13px;
+    cursor: pointer;
+    padding-top: 10px;
+ }
+
+ input[type=checkbox] {
+    opacity: 0;
+    position: absolute;
+    visibility: hidden;
+ }
+
+ .form-check-sign::after, 
+ .form-check-sign::before {
+    content: " ";
+    display: inline-block;
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    left: 0;
+    cursor: pointer;
+    border-radius: 3px;
+    top: 0;
+    background-color: #aaa7a4;
+    border: 1px solid #e3e3e3;
+    transition: opacity .3s linear;
+}
+
+input[type=checkbox]:checked+.form-check-sign::after {
+    opacity: 1;
+}
+
+.form-check-sign::after {
+    font-family: FontAwesome;
+    content: "\f00c";
+    top: 0;
+    text-align: center;
+    font-size: 14px;
+    opacity: 0;
+    color: #efe;
+    border: 0;
+    background-color: inherit;
+}
+
+// jkjbjk
+/* Create a custom checkbox */
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #949494;
+}
+
+.form-check-label  {
+    padding-left: 35px;
+}
+
+/* On mouse-over, add a grey background color */
+// .form-check-label:hover input ~ .checkmark {
+//     // background-color: #ccc;
+// }
+
+/* When the checkbox is checked, add a blue background */
+.form-check-label input:checked ~ .checkmark {
+    background-color: #66615b;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+/* Show the checkmark when checked */
+.form-check-label input:checked ~ .checkmark:after {
+    display: block;
+}
+
+/* Style the checkmark/indicator */
+.form-check-label .checkmark:after {
+    left: 9px;
+    top: 5px;
+    width: 6px;
+    height: 12px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}

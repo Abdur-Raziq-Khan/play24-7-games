@@ -1,0 +1,41 @@
+<!-- <div class="page-header" data-parallax="true" style="background-image: url('./assets/img/daniel-olahh.jpg');"> -->
+  <div class="carousel-box" data-parallax="true">
+
+</div> 
+<div class="main">
+  <!-- <div class="section"> -->
+    <div class="container-fluid">
+      <!-- <div class="leftFixedSmallLink" id="menu">
+        <span style="font-size:30px;cursor:pointer" (click)="openLeftNav()">&#9776;</span>
+      </div> -->
+      <div id='checkL' class="leftPanelFixed" data-simplebar="init">
+        <app-left-sidebar></app-left-sidebar>
+        <div class="leftFixedSmallLink" id="menu">
+          <span style="font-size:30px;cursor:pointer" (click)="openLeftNav()">&#9776;</span>
+        </div>
+      </div>
+
+
+
+      <div class="containerInner">
+        <div class="middle-container plain-row">
+          <!-- <app-leaderboard></app-leaderboard>
+          <app-about-us></app-about-us> -->
+          <div class="main-layout">
+            <router-outlet></router-outlet>
+          </div>
+          <app-footer></app-footer>
+        </div>
+      </div>
+
+      <div id='checkR' class="rightPanelFixed" data-simplebar="init">
+        <app-right-sidebar></app-right-sidebar>
+        <div class="rightFixedSmallLink" id="winners">
+          <span style="font-size:30px;cursor:pointer" (click)="openRightNav()">&#9776;</span>
+        </div>
+      </div>
+
+
+    </div>
+  <!-- </div> -->
+</div>

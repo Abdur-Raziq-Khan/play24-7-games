@@ -1,0 +1,135 @@
+.leftFixedSmallLink, .rightFixedSmallLink {
+    display: none;
+}
+
+.leftPanelFixed, .rightPanelFixed {
+    width: 250px !important;
+    // or
+    // width: 17.2% !important;
+}
+
+.leftPanelFixed {
+    position: fixed !important;
+    height: 100vh !important;
+    width: 250px !important;
+    left: 0;
+    top: 0;
+    padding: 90px 0 0 0;
+    z-index: 99;
+}
+
+.rightPanelFixed {
+    position: fixed !important;
+    height: 100vh !important;
+    width: 250px !important;
+    top: 0;
+    left: auto;
+    right: 0;
+    padding: 90px 0 0 0;
+    z-index: 99;
+}
+
+[data-simplebar] {
+    position: relative;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-content: flex-start;
+    align-items: flex-start;
+    width: inherit;
+    height: inherit;
+    max-width: inherit;
+    max-height: inherit;
+}
+
+
+.containerInner {
+    display: block;
+    margin: 0 auto;
+    width: 60% !important;
+}
+
+.middle-container {
+    // height: 100vh;
+    // min-height: 75vh !important;
+    // margin: 100px 0 50px 0;
+    // margin: 65px 0 50px 0;
+    margin: 65px 0 100px 0;
+    margin-bottom: 0;
+    min-height: 700px;
+}
+
+.plain-row {
+    float: left;
+    width: 100%;
+    clear: both;
+}
+
+@media only screen and (max-width: 767px) {
+.leftFixedSmallLink, .rightFixedSmallLink {
+    top: 80px;
+}
+}
+
+// mobile, ipad
+@media only screen and (max-width: 1024px) {
+    .leftFixedSmallLink {
+        position: fixed;
+        width: 55px;
+        left: 0;
+        text-align: center;
+        color: #fff;
+        left: auto;
+        top: 70px;
+        background: #B81515;
+        padding: 10px 5px;
+        border-radius: 0 5px 5px 0;
+        font-weight: bold;
+        font-size: 1.3em;
+        cursor: pointer;
+        z-index: 99;
+    }
+
+    .rightFixedSmallLink {
+        position: fixed;
+        width: 55px;
+        right: 0;
+        text-align: center;
+        color: #fff;
+        left: auto;
+        top: 70px;
+        background: #B81515;
+        padding: 10px 5px;
+        border-radius: 5px 0 0 5px;
+        font-weight: bold;
+        font-size: 1.3em;
+        cursor: pointer;
+        z-index: 99;
+    }
+
+    .leftFixedSmallLink, .rightFixedSmallLink {
+        display: block;
+    }
+
+    .containerInner {
+        width: 96% !important;
+    }
+}
+
+// ipad pro
+@media only screen and (max-width: 1299px) and (min-width: 1024px) {
+    .containerInner {
+        width: 55% !important;
+    }
+
+    .leftFixedSmallLink, .rightFixedSmallLink {
+        display: none !important;
+    }
+}
+
+// laptop, hd
+@media only screen and (max-width: 1500px) and (min-width: 1301px) {
+    .containerInner {
+        width: 60%!important;
+    }
+}

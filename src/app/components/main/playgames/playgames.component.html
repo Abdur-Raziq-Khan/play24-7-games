@@ -1,0 +1,83 @@
+<div class="container">
+  <h1 class="pageTitle">Android Games</h1>
+  <div class="plainRow andGameRow">
+    <div class="androidGameBox">
+      <img src="../../../../assets/img/play-games/game1.jpg"
+        class="img-responsive adImg" alt="image">
+
+      <a href=""
+        download="">
+        <img src="../../../../assets/img/play-games/download-btn.png" class="center-block andDwnBtn"
+          alt="image"></a>
+    </div>
+    <div class="androidGameBox">
+      <img src="https://www.play24x7games.com/admin/uploads/games_data/mobile_image/1575963633350x360.jpg"
+        class="img-responsive adImg" alt="image">
+
+      <a href=""
+        download="">
+        <img src="../../../../assets/img/play-games/download-btn.png" class="center-block andDwnBtn"
+          alt="image"></a>
+    </div>
+
+  </div>
+  <h1 class="pageTitle web-games-title">Web Games</h1>
+  <div class="plainRow form-group webGames">
+    <div class="gameBox">
+      <div class="gameBoxContent">
+        <h5 class="gamesTitleFloat height30">Play Rummy Online &amp; Earn…</h5>
+        <p>
+          Play Rummy Online…
+          <!--Character Count limit 60 character -->
+        </p>
+        <!-- <a class="nav-link page-scroll btnCustomWhite" href="#" data-toggle="modal" data-target="#myModalLogin">
+Play Now </a>  -->
+        <a class="nav-link page-scroll btnCustomWhite"
+          href="">
+          View </a>
+      </div>
+      <img src="https://www.play24x7games.com/admin/uploads/games_data/thumbnail/1571138165350x225.jpg"
+        class="img-responsive" alt="image">
+    </div>
+    <div class="gameBox">
+      <div class="gameBoxContent">
+        <h5 class="gamesTitleFloat height30">Ludo 24x7</h5>
+        <p>
+          Play Ludo 24x7
+          <!--Character Count limit 60 character -->
+        </p>
+        <!-- <a class="nav-link page-scroll btnCustomWhite" href="#" data-toggle="modal" data-target="#myModalLogin">
+Play Now </a>  -->
+        <a class="nav-link page-scroll btnCustomWhite" href="https://www.play24x7games.com/ludo-24x7">
+          View </a>
+      </div>
+      <img src="https://www.play24x7games.com/admin/uploads/games_data/thumbnail/1575963633350x225.jpg"
+        class="img-responsive" alt="image">
+    </div>
+
+    <div class="gameBox">
+      <div class="gameBoxContent">
+        <h5 class="gamesTitleFloat height30">Shooter</h5>
+        <p>
+          Play shooter
+          <!--Character Count limit 60 character -->
+        </p>
+        <!-- <a class="nav-link page-scroll btnCustomWhite" href="#" data-toggle="modal" data-target="#myModalLogin">
+Play Now </a>  -->
+        <a class="nav-link page-scroll btnCustomWhite" (click)="load('shooter')">
+          View </a>
+      </div>
+      <img src="https://www.play24x7games.com/admin/uploads/games_data/thumbnail/1575963633350x225.jpg"
+        class="img-responsive" alt="image">
+        <!-- <div class="buttons" *ngIf="project=='shooter'">
+          <button (click)="send('Game Controller', 'AddScore', 1)">Add Score</button>
+          <button (click)="send('Game Controller', 'GameOver')">End Game</button>
+        </div> -->
+    </div>
+
+    <app-shooter-game #unityView></app-shooter-game>
+    
+<!-- <img src="../../../../assets/shooter/" /> -->
+
+  </div>
+</div>

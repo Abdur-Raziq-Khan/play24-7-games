@@ -1,0 +1,72 @@
+.page-title {
+    font-size: 30px;
+    font-weight: bold;
+    color: white;
+    border-bottom: 3px solid #f5593d;
+    padding: 10px 0;
+    margin-bottom: 30px;
+}
+
+.card {
+    height: 220px;
+    float: left;
+    border-radius: 5px;
+    border: 1px solid white;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    z-index: unset;
+    margin: 20px;
+}
+
+.card:hover {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transform: unset;
+}
+
+.card-leader {
+    height: 220px;
+    width: 20%;
+    float: left;
+    //     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    margin: 20px;
+}
+
+
+.img-responsive {
+    max-width: 100%;
+} 
+
+.leader-img {
+    height: 160px;
+    width: 100%;
+    border-radius: 5px 5px 0 0;
+}
+
+.container {
+    padding: 2px 16px;
+    margin: 0 auto;
+}
+
+.card-title {
+    font-weight: bold;
+}
+
+.coins-no {
+    color: #f5593d;
+}
+
+
+// smallest devices
+@media only screen and (max-width: 480px) {
+    .card {
+        width: 39%;
+    }
+}
+
+// mobile devices
+@media only screen and (max-width: 767px) {
+    .card {
+        width: 46% !important;
+        margin: 2%;
+    }
+}

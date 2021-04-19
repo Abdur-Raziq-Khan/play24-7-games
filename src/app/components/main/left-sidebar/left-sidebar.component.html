@@ -1,0 +1,50 @@
+<div class="sidenav" id="leftSidenav">
+  <a href="javascript:void(0)" class="closeMenu" (click)="closeLeftNav()">&times;</a>
+  <div class="sidenav-wrapper">
+    <div class="sidenav-content">
+      <ul class="left-panel-menu">
+        <li><a [routerLink]="['leaderboard']">Leaderboard</a></li>
+        <li><a [routerLink]="['about-us']">About Us</a></li>
+        <li><a [routerLink]="['rules']">Rules</a></li>
+        <li><a [routerLink]="['refund-and-cancellation-policy']">Refund and Cancellation Policy</a></li>
+        <li><a [routerLink]="['/home']">Wallet</a></li>
+        <li><a [routerLink]="['terms-and-conditions']">Terms and Conditions</a></li>
+        <li><a [routerLink]="['privacy-policy']">Privacy Policy</a></li>
+        <li><a [routerLink]="['faqs']">FAQs</a></li>
+        <li><a [routerLink]="['blog']">Blog</a></li>
+        <li><a (click)="openLoginModal(content)">Deposit Now</a></li>
+        <li><a [routerLink]="['etor-points']">Etor Points</a></li>
+        <li><a [routerLink]="['payment-process']">Payment Process</a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<!-- login modal - start -->
+<ng-template class="login-modal" #content let-modal>
+  <form>
+      <div class="modal-header">
+          <h4 class="modal-title" id="modal-basic-title">Sign In</h4>
+          <button type="button" class="close btn-close" aria-label="Close" (click)="modal.dismiss('Cross click')">
+              <span aria-hidden="true">&times;</span>
+          </button>
+      </div>
+      <div class="modal-body">
+          <div class="form-group">
+              <input type="text" autocomplete="off" class="form-control" placeholder="Email*">
+          </div>
+          <div class="form-group">
+              <input type="password" autocomplete="off" class="form-control" placeholder="Password*">
+          </div>
+          <div class="btns-group">
+              <button type="button" class="btn btn-default btn-round"
+                  (click)="modal.close('Save click')">Login</button>
+              <p class="not-member-txt" (click)="openRegModal(regContent)">Not a Member?</p>
+          </div>
+          <p class="forgot-pass-txt">Forgot Password</p>
+      </div>
+      <!-- <div class="modal-footer">
+  </div> -->
+  </form>
+</ng-template>
+<!-- login modal - end -->

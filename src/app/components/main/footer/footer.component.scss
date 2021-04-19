@@ -1,0 +1,34 @@
+.plainRow {
+    // position: fixed;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    // width: 58.9%;
+    // z-index: 999;
+    float: left;
+    clear: both;
+}
+
+.copyright {
+    padding: 15px 0;
+    /* border-top: 1px solid rgba(255, 255, 255, 0.3); */
+    color: #ffffff;
+    background: #000;
+    float: left;
+    width: 100%;
+}
+
+.container {
+    margin: 0 auto;
+    padding: 2px 16px;
+}
+
+.menuFooterInner {
+    margin-top: 3px;
+}
+
+.menuFooterInner a {
+    color: #fff;
+    transition: all 0.3s ease-in-out;
+    margin: 0 15px 0 0;
+}
